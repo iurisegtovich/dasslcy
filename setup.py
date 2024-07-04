@@ -37,7 +37,7 @@ def download_dasslc():
 class BuildExtCommand(build_ext_setuptools):
     """Download dasslc source code before installing dasslcy"""
     def run(self):
-        download_dasslc()
+        #download_dasslc() #edit 2024jul04 - this fork has fixed version dasslc source code
         build_ext_setuptools.run(self)
 
 ### EXTENSION

@@ -12,6 +12,12 @@ All the information about the usage of this package can be found in example file
 ./tests/dasslc_example.py
 ```
 
+## online testing
+
+- example hosted on google-colab by iuri s v segtovich
+
+[@google-colab]: https://colab.research.google.com/drive/1LRJ8MngobTfY9K5urh1vWio-nCX7-h4H
+
 ### Prerequisites
 
 - For windows: msys2 with Python3 and C compiler (see [python-mingw]):

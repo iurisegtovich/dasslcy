@@ -6,7 +6,7 @@
 
 import numpy as np
 cimport numpy as np
-cimport dasslc_def
+cimport dasslcy.dasslc_def as dasslc_def #edit 2024jul04
 
 np.import_array()
 
@@ -16,7 +16,7 @@ cdef int SHARED_RES_MEM = 0
 cdef dasslc_def.BOOL residuals(dasslc_def.PTR_ROOT *root,
                                 dasslc_def.REAL t, dasslc_def.REAL *y,
                                 dasslc_def.REAL *yp, dasslc_def.REAL *res,
-                                dasslc_def.BOOL *jac):
+                                dasslc_def.BOOL *jac) noexcept: #edit 2024jul04
     cdef:
         np.npy_intp shape[1]
         int size, j
