@@ -91,7 +91,8 @@ print('------- Solve model0  ---------- ')
 t0 = np.array([0.0, 1.0])
 y0 = np.array([1.0])  # ---------------------- Initial condition
 
-t, y, yp = dasslcy.solve(model0, t0, y0)  # ---#| The simplest call to dasslc,
+t_, y, yp = dasslcy.solve(model0, t0, y0)  # ---#| The simplest call to dasslc,
+t=np.asarray(t_)
 #| with all the mandatory inputs and outputs.
 #| y and yp are equally spaced in all time span
 # Plot results
@@ -119,8 +120,8 @@ y0 = np.array([0.0, 1.0])  # ------------------ Initial condition
 # ------------------ Derivatives at initial condition (optional)
 yp0 = np.array([1.0, 0.0])
 
-t, y, yp = dasslcy.solve(model1, t0, y0, yp0)  # -- Call with the optional yp0
-
+t_, y, yp = dasslcy.solve(model1, t0, y0, yp0)  # -- Call with the optional yp0
+t=np.asarray(t_)
 
 # Plot results
 if has_plt:
@@ -147,7 +148,8 @@ atol = 1e-8  # ----------------------- The absolute tolerance
 rtol = 1e-6  # ----------------------- The relative tolerance
 
 # Call with optional arguments (yp0 = None)
-t, y, yp = dasslcy.solve(model2, t0, y0, yp0, par, rtol, atol)
+t_, y, yp = dasslcy.solve(model2, t0, y0, yp0, par, rtol, atol)
+t=np.asarray(t_)
 
 # Plot results
 if has_plt:
@@ -168,7 +170,7 @@ class pend_par:  # ----------------#|
     dae = 3  # |
 
 
-t0 = np.linspace(0.0, 50.0, 10000.0)
+t0 = np.linspace(0.0, 50.0, 10000)
 y0 = np.array([1.0, 0.0, 0.0, 0.0, 0.0])
 yp0 = None
 par = pend_par()  # ----------------- The optional parameter class initialization
@@ -177,7 +179,8 @@ rtol = 1e-8
 # ---- The dependent variable index vector (needed for high index DAE)
 index = np.array([1, 1, 2, 2, 3])
 
-t, y, yp = dasslcy.solve(model3, t0, y0, yp0, par, rtol, atol, index)
+t_, y, yp = dasslcy.solve(model3, t0, y0, yp0, par, rtol, atol, index)
+t=np.asarray(t_)
 
 # Plot results
 if has_plt:

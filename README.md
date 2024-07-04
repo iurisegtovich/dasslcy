@@ -12,11 +12,11 @@ All the information about the usage of this package can be found in example file
 ./tests/dasslc_example.py
 ```
 
-## online testing
+## Online Testing
 
-- example hosted on google-colab by iuri s v segtovich
+* Example hosted on Google Colab by Iuri S. V. Segtovich.
 
-[@google-colab]: https://colab.research.google.com/drive/1LRJ8MngobTfY9K5urh1vWio-nCX7-h4H
+**Link:** [Google Colab](https://colab.research.google.com/drive/1LRJ8MngobTfY9K5urh1vWio-nCX7-h4H)
 
 ### Prerequisites
 
@@ -25,7 +25,7 @@ All the information about the usage of this package can be found in example file
 
 ### Installing
 
-- Close this repository `git clone https://github.com/caiofcm/dasslcy.git`
+- Close this repository `git clone https://github.com/iurisegtovich/dasslcy.git`
 - `cd dasslcy`
 - Install:
     - `pip install -r requirements.txt .` for system installation
@@ -38,6 +38,8 @@ All the information about the usage of this package can be found in example file
 
 - Caio Marcellos
 - Author of Python/C-Api Wrapper: Ataíde Neto - ataide@peq.coppe.ufrj.br
+
+- Fork revision: iuri s v segtovich
 
 [python-mingw]: https://stackoverflow.com/questions/41932407/which-python-should-i-install-and-how-when-using-msys2
 
