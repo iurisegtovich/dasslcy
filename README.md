@@ -20,7 +20,9 @@ All the information about the usage of this package can be found in example file
 
 ### Prerequisites
 
-- For windows: msys2 with Python3 and C compiler (see [python-mingw]):
+- For windows:
+    - option a) For windows with microsoft c/c++ compiler: https://visualstudio.microsoft.com/pt-br/downloads/?q=build+tools
+    - option b) For windows with gnu c/c++ compiler: https://www.msys2.org/
 - For linux: python3
 
 ### Installing
